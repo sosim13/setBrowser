@@ -3,17 +3,17 @@
 <WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
 <AGATEWEBVIEW id="webView" layout="0,0,720,1150" src="" supportZoom="false" controls="none" defaultImg="#ffffff">
 <LINKMAP>
-<LINK url="http://*" delay="1"/>	//ÆäÀÌÁö ÀÌµ¿½Ã ±ôºýÀÌ´Â Çö»ó ¹æÁö ÄÚµå
-<LINK url="http://*" onFinish=""/>	//ÆäÀÌÁö ·ÎµùÀÌ ¿Ï·áµÉ ½Ã È£Ãâ µÇ´Â ÄÚµå
+<LINK url="http://*" delay="1"/>	//íŽ˜ì´ì§€ ì´ë™ì‹œ ê¹œë¹¡ì´ëŠ” í˜„ìƒ ë°©ì§€ ì½”ë“œ
+<LINK url="http://*" onFinish=""/>	//íŽ˜ì´ì§€ ë¡œë”©ì´ ì™„ë£Œë  ì‹œ í˜¸ì¶œ ë˜ëŠ” ì½”ë“œ
 </LINKMAP>
 </AGATEWEBVIEW>
 </WINDOW>
-<!-- ÀÌÀü, ´ÙÀ½ÆäÀÌÁö ÀÌµ¿ ¹öÆ°¿¡ ÀÌ¹ÌÁö Ã³¸® ÇÔ¼ö -->
+<!-- ì´ì „, ë‹¤ìŒíŽ˜ì´ì§€ ì´ë™ ë²„íŠ¼ì— ì´ë¯¸ì§€ ì²˜ë¦¬ í•¨ìˆ˜ -->
 <FUNCTION id="prevForwardCheck">
 <CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg= 'res/tab_prev.png'" elseCmd="backBtn.defaultImg = 'res/tab_prev_on.png'"/>
 <CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg= 'res/tab_next.png'" elseCmd="fowardBtn.defaultImg = 'res/tab_next_on.png'"/>
 </FUNCTION>
-<!--ÇÏ´Ü -->
+<!--í•˜ë‹¨ -->
 <BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="invisible"/>
 <STYLEBUTTON id="webBottomWindow" layout="0,1150,720,80" align="linear:horizontal|hJustify|center" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false">
 <BUTTON id="backBtn" layout="70,70" defaultImg="res/img/tab_prev.png" onClick="" margin="30,0,0,0"/>
@@ -24,5 +24,5 @@
 <BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick=""/>
 </STYLEBUTTON>
 </UILAYOUT>
-<!-- ÀÌÀü, ´ÙÀ½ÆäÀÌÁö ÀÌµ¿ ¹öÆ°¿¡ ÀÌ¹ÌÁö Ã³¸® ÇÔ¼ö -->
+<!-- ì´ì „, ë‹¤ìŒíŽ˜ì´ì§€ ì´ë™ ë²„íŠ¼ì— ì´ë¯¸ì§€ ì²˜ë¦¬ í•¨ìˆ˜ -->
 <CMD cmd="function.prevForwardCheck" delay="100" />
