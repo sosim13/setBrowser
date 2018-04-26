@@ -39,7 +39,7 @@
 		<FUNCTION id="goBack">
 			<CMD condition="webView.canBack() == 'true'" cmd="webView.back()" elseCmd="device.toastPopup('첫 화면입니다.')" />
 		</FUNCTION>
-		<FUNCTION id=" goForward">
+		<FUNCTION id="goForward">
 			<CMD condition="webView.canForward() == 'true'" cmd="webView.forward()" elseCmd="device.toastPopup('다음화면이 없습니다.')" />
 		</FUNCTION>
 		<FUNCTION id="webBottomVisible">
