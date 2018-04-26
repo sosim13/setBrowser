@@ -58,7 +58,7 @@
 		</FUNCTION>
 		<!-- 메뉴 -->
 		<FUNCTION id="menuPopup">
-			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width, 0, 'elasticOut', 200, '')" elseCmd="menuWindow.visible='invisible'" />
+			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width, 0, 'elasticOut', 200, '')" elseCmd="menuWindow.visible='visible'" />
 		</FUNCTION>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<CMD cmd="function.prevForwardCheck" delay="100" />
