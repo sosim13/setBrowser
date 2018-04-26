@@ -14,7 +14,7 @@
 			</AGATEWEBVIEW>
 		</WINDOW>
 		<!--하단 -->
-		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/browser_ico_full.png" onClick="" visible="invisible"/>
+		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="invisible"/>
 		<WINDOW id="webBottomWindow" layout="0,1150,720,80" >
 			<STYLEBUTTON layout="0,0,720,80" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false"/>
 			<WINDOW layout="0,0,720,80" align="linear:horizontal|hJustify|center" >
