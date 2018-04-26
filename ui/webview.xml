@@ -14,17 +14,17 @@
 			</AGATEWEBVIEW>
 		</WINDOW>
 		<!--하단 -->
-		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="device.toastPopup('메뉴 보이기'), function.webBottomVisible" visible="invisible"/>
+		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/browser_ico_full.png" onClick="device.toastPopup('메뉴 보이기'), function.webBottomVisible" visible="invisible"/>
 		<WINDOW id="webBottomWindow" layout="0,1150,720,80" >
 			<STYLEBUTTON layout="0,0,720,80" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false"/>
 			<WINDOW layout="0,0,720,80" align="linear:horizontal|hJustify|center" >
-				<BUTTON id="backBtn" layout="70,70" defaultImg="res/img/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
-				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="function.goForward" />
-				<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://sosim13p.cafe24.com/index.jsp'" />
-				<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
-				<BUTTON layout="70,70" defaultImg="res/img/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
+				<BUTTON id="backBtn" layout="70,70" defaultImg="res/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
+				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/tab_next.png" onClick="function.goForward" />
+				<BUTTON layout="70,70" defaultImg="res/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://sosim13p.cafe24.com/index.jsp'" />
+				<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
+				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
+				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 			</WINDOW>
 			
 			<!-- 메뉴 -->
@@ -44,8 +44,8 @@
 	<FUNCTIONLIST>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<FUNCTION id="prevForwardCheck">
-			<CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg='res/img/tab_prev.png'" elseCmd="backBtn.defaultImg='res/img/tab_prev_on.png'"/>
-			<CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg='res/img/tab_next.png'" elseCmd="fowardBtn.defaultImg='res/img/tab_next_on.png'"/>
+			<CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg='res/tab_prev.png'" elseCmd="backBtn.defaultImg='res/tab_prev_on.png'"/>
+			<CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg='res/tab_next.png'" elseCmd="fowardBtn.defaultImg='res/tab_next_on.png'"/>
 		</FUNCTION>
 		<FUNCTION id="goBack">
 			<CMD condition="webView.canBack() == 'true'" cmd="webView.back()" elseCmd="device.toastPopup('첫 화면입니다.')" />
