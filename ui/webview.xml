@@ -28,6 +28,19 @@
 			</WINDOW>
 		</WINDOW>
 		</UILAYOUT>
+		
+		<!-- 메뉴 -->
+		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" onClick="">
+			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false" />
+			<WINDOW layout="362,578,334,550">
+				<LABEL layout="304,88" text="쇼핑몰소식" fontSize="25"textAlign="vCenter" textColor="#000000"padding="30,0,0,0" onClick=""/>
+				<LABEL layout="304,88" text="고객센터" fontSize="25"textAlign="vCenter" textColor="#000000"padding="30,0,0,0" onClick=""/>
+				<LABEL layout="304,88" text="SMS 공유" fontSize="25"textAlign="vCenter" textColor="#000000"padding="30,0,0,0" onClick=""/>
+				<LABEL layout="304,88" text="외부인터넷 연결" fontSize="25" textAlign="vCenter"textColor="#000000" padding="30,0,0,0"onClick="" />
+				<LABEL layout="304,88" text="화면캡쳐" fontSize="25"textAlign="vCenter" textColor="#000000"padding="30,0,0,0" onClick=""/>
+				<LABEL layout="304,88" text="{'버전정보  ' +application.versionName}" fontSize="25" textAlign="vCenter"textColor="#000000" padding="30,0,0,0"onClick="" />
+			</WINDOW>
+		</WINDOW>
 	</UI>
 	<FUNCTIONLIST>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
