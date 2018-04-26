@@ -29,7 +29,8 @@
 			
 <!-- 메뉴 -->
 <WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" onClick="">
-
+<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false">
+</STYLEBUTTON>
 </WINDOW>
 		</WINDOW>
 		</UILAYOUT>
