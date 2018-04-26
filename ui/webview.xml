@@ -3,7 +3,13 @@
 	<UI>
 		<UILAYOUT portrait="720,1230" landscape="720,1230">
 		<WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
-			<AGATEWEBVIEW id="webView" src="http://m.naver.com" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
+			<WINDOW id="addrWindow" layout="0,150,720,130" align="relative">
+			   <WINDOW layout="0,0,720,120" align="relative" >
+			      <EDIT layout="0,50,550,50"  placeholder="Addr" returnKeyType="next" 
+			       	 fontSize="40" fontColor="#555555" fontStyle="bold" textAlign="vCenter" defaultImg="res/img/searchBar.png"/>
+			     </WINDOW>
+		     </WINDOW>
+			<AGATEWEBVIEW id="webView" layout="0,50,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
 				<LINKMAP>
 					<LINK url="http://*" delay="1"/>	//페이지 이동시 깜빡이는 현상 방지 코드
 					<LINK url="http://*" onFinish=""/>	//페이지 로딩이 완료될 시 호출 되는 코드
