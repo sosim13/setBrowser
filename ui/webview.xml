@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UILAYOUT portrait="720,1230" landscape="720,1230">
+<WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
+<AGATEWEBVIEW id="webView" layout="0,0,720,1150" src="" supportZoom="false" controls="none" defaultImg="#ffffff">
+<LINKMAP>
+<LINK url="http://*" delay="1"/>
+<LINK url="http://*" onFinish=""/>
+</LINKMAP>
+</AGATEWEBVIEW>
+</WINDOW>
+<!--하단 -->
+<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="invisible"/>
+<STYLEBUTTON id="webBottomWindow" layout="0,1150,720,80" align="linear:horizontal|hJustify|center" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false">
+<BUTTON id="backBtn" layout="70,70" defaultImg="res/img/tab_prev.png" onClick="" margin="30,0,0,0"/>
+<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="" />
+<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick=" " />
+<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="" />
+<LABEL layout="1,70" defaultImg="#d3d4d5"/>
+<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick=""/>
+</STYLEBUTTON>
+</UILAYOUT>
+<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
+<CMD cmd="function.prevForwardCheck" delay="100" />
