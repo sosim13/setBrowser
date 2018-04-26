@@ -14,7 +14,7 @@
 			</AGATEWEBVIEW>
 		</WINDOW>
 		<!--하단 -->
-		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="function.webBottomVisible"/>
+		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="device.toastPopup('메뉴 보이기'), function.webBottomVisible" visible="invisible"/>
 		<WINDOW id="webBottomWindow" layout="0,1150,720,80" >
 			<STYLEBUTTON layout="0,0,720,80" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false"/>
 			<WINDOW layout="0,0,720,80" align="linear:horizontal|hJustify|center" >
@@ -24,7 +24,7 @@
 				<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://mulawear.com/m'" />
 				<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="function.webBottomVisible"/>
+				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 		<!-- </STYLEBUTTON> -->
 			</WINDOW>
 		</WINDOW>
