@@ -3,11 +3,16 @@
 <WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
 <AGATEWEBVIEW id="webView" layout="0,0,720,1150" src="" supportZoom="false" controls="none" defaultImg="#ffffff">
 <LINKMAP>
-<LINK url="http://*" delay="1"/>
-<LINK url="http://*" onFinish=""/>
+<LINK url="http://*" delay="1"/>	//페이지 이동시 깜빡이는 현상 방지 코드
+<LINK url="http://*" onFinish=""/>	//페이지 로딩이 완료될 시 호출 되는 코드
 </LINKMAP>
 </AGATEWEBVIEW>
 </WINDOW>
+<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
+<FUNCTION id="prevForwardCheck">
+<CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg= 'res/tab_prev.png'" elseCmd="backBtn.defaultImg = 'res/tab_prev_on.png'"/>
+<CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg= 'res/tab_next.png'" elseCmd="fowardBtn.defaultImg = 'res/tab_next_on.png'"/>
+</FUNCTION>
 <!--하단 -->
 <BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="invisible"/>
 <STYLEBUTTON id="webBottomWindow" layout="0,1150,720,80" align="linear:horizontal|hJustify|center" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false">
