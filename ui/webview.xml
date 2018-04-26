@@ -27,11 +27,17 @@
 				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 			</WINDOW>
 			
-<!-- 메뉴 -->
-<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" onClick="">
-<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false">
-</STYLEBUTTON>
-</WINDOW>
+			<!-- 메뉴 -->
+			<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" onClick="">
+				<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false">
+					<LABEL layout="304,88" text="쇼핑몰소식" fontSize="25"textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick=""/>
+					<LABEL layout="304,88" text="고객센터" fontSize="25"textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick=""/>
+					<LABEL layout="304,88" text="SMS 공유" fontSize="25"textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick=""/>
+					<LABEL layout="304,88" text="외부인터넷 연결" fontSize="25" textAlign="vCenter"textColor="#000000" padding="30,0,0,0"onClick="" />
+					<LABEL layout="304,88" text="화면캡쳐" fontSize="25"textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick=""/>
+					<LABEL layout="304,88" text="{'버전정보  ' +application.versionName}" fontSize="25" textAlign="vCenter"textColor="#000000" padding="30,0,0,0"onClick="" />
+				</STYLEBUTTON>
+			</WINDOW>
 		</WINDOW>
 		</UILAYOUT>
 	</UI>
