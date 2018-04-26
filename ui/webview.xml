@@ -3,7 +3,7 @@
 	<UI>
 		<UILAYOUT portrait="720,1230" landscape="720,1230">
 		<WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
-			<AGATEWEBVIEW id="webView" src="https://www.google.com/" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
+			<AGATEWEBVIEW id="webView" src="https://google.com" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
 				<LINKMAP>
 					<LINK url="http://*" delay="1"/>	//페이지 이동시 깜빡이는 현상 방지 코드
 					<LINK url="http://*" onFinish=""/>	//페이지 로딩이 완료될 시 호출 되는 코드
@@ -23,26 +23,10 @@
 				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="function.goForward" />
 				<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://m.naver.com'" />
 				<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />
-				<!-- <BUTTON layout="70,70" defaultImg="res/img/img_up.png" onClick="device.toastPopup('이미지업로드'), webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp'" /> -->
-				<BUTTON layout="70,70" defaultImg="res/img/tab_settings.png" onClick="function.menuPopup" margin="0,0,30,0" />
+				<BUTTON layout="70,70" defaultImg="res/img/img_up.png" onClick="device.toastPopup('이미지업로드'), webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp'" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
 				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 		<!-- </STYLEBUTTON> -->
-				<!-- 추가메뉴 -->
-				<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" onClick="">
-					<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false">
-						<LABEL layout="304,88" text="이벤트/공지사항" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="webView.src ='http://mulawear.com/m/board.html?code=jo112_board1'" />
-						<LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="appLauncher.openUri('tel:+1-650-253-0000','')" />
-						<LABEL layout="304,88" text="SMS 공유" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="appLauncher.openUri('sms:?body=뮬라웨어', '')" />
-						<LABEL layout="304,88" text="외부 인터넷 연결" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0"onClick="appLauncher.openUri('http://www.naver.com', '')" />
-						<LABEL layout="304,88" text="화면 캡쳐" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="function.capture" />
-							<FUNCTION id="capture">
-								<CMD cmd="userVariable.capturePath =image.capture('webView', 0,0,webView.width,webView.height)" />
-								<CMD cmd="device.toastPopup(userVariable.capturePath)"/>
-							</FUNCTION>
-						<LABEL layout="304,88" text="{'버전 정보  ' + application.versionName}" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="device.toastPopup('버전 :' +application.versionName)" />
-					</STYLEBUTTON>
-				</WINDOW>
 			</WINDOW>
 		</WINDOW>
 		</UILAYOUT>
@@ -61,10 +45,6 @@
 		</FUNCTION>
 		<FUNCTION id="webBottomVisible">
 			<CMD condition="webBottomWindow.visible == 'visible'" cmd="webBottomWindow.visible='invisible', bottomBtn.visible='visible', mainWindow.height=mainWindow.height+80, webView.height=webView.height+80" elseCmd="webBottomWindow.visible='visible', bottomBtn.visible='invisible', mainWindow.height=mainWindow.height-80, webView.height=webView.height-80" />
-		</FUNCTION>		
-		<!-- 메뉴 -->
-		<FUNCTION id="menuPopup">
-			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width,0, 'elasticOut', 200, '')" elseCmd="menuWindow.visible = 'invisible'" />
 		</FUNCTION>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<CMD cmd="function.prevForwardCheck" delay="100" />
