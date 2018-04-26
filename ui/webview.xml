@@ -22,7 +22,7 @@
 				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="function.goForward" />
 				<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://m.naver.com'" />
 				<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
-				<BUTTON layout="70,70" defaultImg="res/img/tab_settings.png" onClick="function.menuPopup" margin="0,0,30,0" />
+				<BUTTON layout="70,70" defaultImg="res/img/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
 				<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 			</WINDOW>
@@ -58,7 +58,7 @@
 		</FUNCTION>
 		<!-- 메뉴 -->
 		<FUNCTION id="menuPopup">
-			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width,0, 'elasticOut', 200, '')" elseCmd="menuWindow.visible = 'invisible'" />
+			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width, 0, 'elasticOut', 200, '')" elseCmd="menuWindow.visible='invisible'" />
 		</FUNCTION>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<CMD cmd="function.prevForwardCheck" delay="100" />
