@@ -18,8 +18,8 @@
 		<STYLEBUTTON id="webBottomWindow" layout="0,1150,720,80" align="linear:horizontal|hJustify|center" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false">
 		<BUTTON id="backBtn" layout="70,70" defaultImg="res/img/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
 		<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="function.goForward" />
-		<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src = 'http://mulawear.com/m'" />
-		<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'),webView.refresh()" />
+		<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://mulawear.com/m'" />
+		<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />
 		<LABEL layout="1,70" defaultImg="#d3d4d5"/>
 		<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="function.webBottomVisible"/>
 		</STYLEBUTTON>
@@ -28,8 +28,8 @@
 	<FUNCTIONLIST>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<FUNCTION id="prevForwardCheck">
-			<CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg= 'res/img/tab_prev.png'" elseCmd="backBtn.defaultImg = 'res/img/tab_prev_on.png'"/>
-			<CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg= 'res/img/tab_next.png'" elseCmd="fowardBtn.defaultImg = 'res/img/tab_next_on.png'"/>
+			<CMD condition="webView.canBack() == 'true'" cmd="backBtn.defaultImg='res/img/tab_prev.png'" elseCmd="backBtn.defaultImg='res/img/tab_prev_on.png'"/>
+			<CMD condition="webView.canForward() == 'true'" cmd="fowardBtn.defaultImg='res/img/tab_next.png'" elseCmd="fowardBtn.defaultImg='res/img/tab_next_on.png'"/>
 		</FUNCTION>
 		<FUNCTION id="goBack">
 			<CMD condition="webView.canBack() == 'true'" cmd="webView.back()" elseCmd="device.toastPopup('첫 화면입니다.')" />
@@ -38,7 +38,7 @@
 			<CMD condition="webView.canForward() == 'true'" cmd="webView.forward()" elseCmd="device.toastPopup('다음화면이 없습니다.')" />
 		</FUNCTION>
 		<FUNCTION id="webBottomVisible">
-			<CMD condition="webBottomWindow.visible == 'visible'" cmd="webBottomWindow.visible = 'invisible',  bottomBtn.visible = 'visible',mainWindow.height = mainWindow.height + 80, webView.height= webView.height +80" elseCmd="webBottomWindow.visible = 'visible',bottomBtn.visible = 'invisible', mainWindow.height = mainWindow.height - 80,webView.height= webView.height - 80" />
+			<CMD condition="webBottomWindow.visible == 'visible'" cmd="webBottomWindow.visible='invisible', bottomBtn.visible='visible',mainWindow.height=mainWindow.height+80, webView.height=webView.height+80" elseCmd="webBottomWindow.visible='visible', bottomBtn.visible='invisible', mainWindow.height=mainWindow.height-80, webView.height=webView.height-80" />
 		</FUNCTION>
 		<!-- 이전, 다음페이지 이동 버튼에 이미지 처리 함수 -->
 		<CMD cmd="function.prevForwardCheck" delay="100" />
