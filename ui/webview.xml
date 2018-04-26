@@ -16,12 +16,12 @@
 		<!--하단 -->
 		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/img/browser_ico_full.png" onClick="" visible="invisible"/>
 		<STYLEBUTTON id="webBottomWindow" layout="0,1150,720,80" align="linear:horizontal|hJustify|center" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false">
-		<BUTTON id="backBtn" layout="70,70" defaultImg="res/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
-		<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/tab_next.png" onClick="function.goForward" />
-		<BUTTON layout="70,70" defaultImg="res/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src = 'http://mulawear.com/m'" />
-		<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'),webView.refresh()" />
+		<BUTTON id="backBtn" layout="70,70" defaultImg="res/img/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
+		<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/img/tab_next.png" onClick="function.goForward" />
+		<BUTTON layout="70,70" defaultImg="res/img/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src = 'http://mulawear.com/m'" />
+		<BUTTON layout="70,70" defaultImg="res/img/tab_reload.png" onClick="device.toastPopup('새로고침'),webView.refresh()" />
 		<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-		<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="function.webBottomVisible"/>
+		<BUTTON layout="70,70" defaultImg="res/img/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="function.webBottomVisible"/>
 		</STYLEBUTTON>
 		</UILAYOUT>
 	</UI>
