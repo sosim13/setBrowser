@@ -29,9 +29,7 @@
 			
 <!-- 메뉴 -->
 <WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" onClick="">
-<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false">
-<LABEL layout="304,88" text="쇼핑몰소식" fontSize="25"textAlign="vCenter" textColor="#000000"padding="30,0,0,0" onClick="" />
-</STYLEBUTTON>
+
 </WINDOW>
 		</WINDOW>
 		</UILAYOUT>
