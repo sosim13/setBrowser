@@ -25,8 +25,8 @@ function css(selector, property, value) {
     }
 }
 
-css("body", "font-size", "24px");
-css("tr, td ,th", "font-size", "24px");
-css("a:link", "font-size", "18pt");
-css("a:visited", "font-size", "18pt");
-css("a:hover", "font-size", "18pt");
+css("body", "font-size", "30px");
+css("tr, td ,th", "font-size", "30px");
+css("a:link", "font-size", "20pt");
+css("a:visited", "font-size", "20pt");
+css("a:hover", "font-size", "20pt");
