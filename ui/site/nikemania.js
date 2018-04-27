@@ -25,5 +25,6 @@ function css(selector, property, value) {
     }
 }
 
-css("div#pmemo_cont","font-size","24px");
-css("div#pmemo3","font-size","18pt");
+css("con_head1","font-size","24px");
+css("pmemo_cont","font-size","24px");
+css("con_text","font-size","24px");
