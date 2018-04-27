@@ -10,6 +10,8 @@
 					
 					<!-- 공통 -->
 					<LINK url="http://*" jsPlugin="js/common.js" delay="500"/>
+
+					<!-- 사이트 -->
 					<LINK url="http://http://nikemania.com/*" jsPlugin="js/nikemania.js" delay="500"/>
 				</LINKMAP>
 			</AGATEWEBVIEW>
@@ -23,9 +25,9 @@
 				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/tab_next.png" onClick="function.goForward" />
 				<BUTTON layout="70,70" defaultImg="res/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://sosim13p.cafe24.com/index.jsp'" />
 				<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
-				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화8'), function.menuPopup" margin="0,0,30,0" />
+				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
+				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기1'), function.webBottomVisible"/>
 			</WINDOW>
 		</WINDOW>
 		<!-- 메뉴 -->
@@ -35,9 +37,9 @@
 				<LABEL layout="304,88" text="이미지업로드" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudnary/'" />
 				<LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="appLauncher.openUri('tel:+1-650-253-0000','')" />
 				<LABEL layout="304,88" text="SMS 공유" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="appLauncher.openUri('sms:?body=뮬라웨어', '')" />
-				<LABEL layout="304,88" text="외부인터넷 연결" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="" />
+				<LABEL layout="304,88" text="외부 인터넷 연결" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0"onClick="appLauncher.openUri('http://www.naver.com', '')" />
 				<LABEL layout="304,88" text="화면캡쳐" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="function.capture"/>
-				<LABEL layout="304,88" text="소스보기" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="function.viewSource" />
+				<LABEL layout="304,88" text="{'버전 정보  ' + application.versionName}" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="device.toastPopup('소스보기'), function.viewSource" />
 			</WINDOW>
 		</WINDOW>
 		</UILAYOUT>
