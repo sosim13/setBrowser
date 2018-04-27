@@ -10,6 +10,7 @@
 					
 					<!-- 공통 -->
 					<LINK url="http://*" jsPlugin="js/common.js" delay="500"/>
+					<LINK url="http://http://nikemania.com/*" jsPlugin="js/nikemania.js" delay="500"/>
 				</LINKMAP>
 			</AGATEWEBVIEW>
 		</WINDOW>
