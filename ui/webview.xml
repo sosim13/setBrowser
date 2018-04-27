@@ -22,14 +22,14 @@
 				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/tab_next.png" onClick="function.goForward" />
 				<BUTTON layout="70,70" defaultImg="res/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://sosim13p.cafe24.com/index.jsp'" />
 				<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
-				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화8'), function.menuPopup" margin="0,0,30,0" />
+				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화9'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
 				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기'), function.webBottomVisible"/>
 			</WINDOW>
 		</WINDOW>
 		<!-- 메뉴 -->
 		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" borderStyle="solid:1|#555555" onClick="">
-			<STYLEBUTTON layout="362,578,334,550" enabled="false" />
+			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" enabled="false" />
 				<WINDOW align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4">
 				<LABEL layout="304,88" text="쇼핑몰소식" fontSize="25" textAlign="vCenter" textColor="#000000" padding="0,0,0,0" onClick="webView.src='http://mulawear.com/m/board.html?code=jo112_board1'" />
 				<LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="0,0,0,0" onClick="appLauncher.openUri('tel:+1-650-253-0000','')" />
