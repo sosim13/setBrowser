@@ -9,7 +9,7 @@
 					<LINK url="http://*" onFinish=""/>	//페이지 로딩이 완료될 시 호출 되는 코드
 					
 					<!-- 공통 -->
-					<LINK url="http://nikemania.com/*" jsPlugin="js/common.js" delay="500"/>
+					<LINK url="http://*" jsPlugin="js/common.js" delay="500"/>
 				</LINKMAP>
 			</AGATEWEBVIEW>
 		</WINDOW>
