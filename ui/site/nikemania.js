@@ -28,9 +28,3 @@ function css(selector, property, value) {
 css("div#con_head1", "font-size", "40px");
 css("div#pmemo_cont", "font-size", "40px");
 css("div#con_text", "font-size", "40px");
-css("div#login_head", "font-size", "40px");
-css("font#rep", "font-size", "40px");
-css("table.reply_box td#rp_right", "font-size", "40px");
-css("div#con_says", "font-size", "40px");
-css("font.reply_id", "font-size", "40px");
-css("a:link", "font-size", "18pt");

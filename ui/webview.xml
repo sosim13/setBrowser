@@ -20,21 +20,21 @@
 		<BUTTON id="bottomBtn" layout="620,1136,90,84" defaultImg="res/browser_ico_full.png" onClick="device.toastPopup('메뉴 보이기'), function.webBottomVisible" visible="invisible"/>
 		<WINDOW id="webBottomWindow" layout="0,1150,720,80" >
 			<STYLEBUTTON layout="0,0,720,80" overlay1="gradation:tb|#f4f4f4|#e3e3e3" enabled="false"/>
-			<WINDOW layout="0,0,720,80" align="linear:horizontal|hJustify|center" >
+			<WINDOW layout="0,0,720,80" align="linear:horizontal|hJustify|center">
 				<BUTTON id="backBtn" layout="70,70" defaultImg="res/tab_prev.png" onClick="function.goBack" margin="30,0,0,0" />
 				<BUTTON id="fowardBtn" layout="70,70" defaultImg="res/tab_next.png" onClick="function.goForward" />
 				<BUTTON layout="70,70" defaultImg="res/tab_home.png" onClick="device.toastPopup('첫 페이지로이동'), webView.src='http://sosim13p.cafe24.com/index.jsp'" />
 				<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
 				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기5'), function.webBottomVisible"/>
+				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기6'), function.webBottomVisible"/>
 			</WINDOW>
 		</WINDOW>
 		<!-- 메뉴 -->
 		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" borderStyle="solid:1|#555555" onClick="">
 			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false" />
 			<WINDOW layout="362,578,334,550" align="linear:vertical">
-				<LABEL layout="304,88" text="이미지업로드" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudnary/'" />
+				<LABEL layout="304,88" text="이미지업로드" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp'" />
 				<LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="appLauncher.openUri('tel:+1-650-253-0000','')" />
 				<LABEL layout="304,88" text="SMS 공유" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="appLauncher.openUri('sms:?body=뮬라웨어', '')" />
 				<LABEL layout="304,88" text="외부 인터넷 연결" fontSize="25" textAlign="vCenter" textColor="#000000" padding="30,0,0,0" onClick="appLauncher.openUri('http://www.naver.com', '')" />
@@ -61,7 +61,7 @@
 		</FUNCTION>
 		<!-- 메뉴 -->
 		<FUNCTION id="menuPopup">
-			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width,0, 'elasticOut', 500, '')" elseCmd="menuWindow.visible = 'invisible'" />
+			<CMD condition="menuWindow.visible == 'invisible'" cmd="animation.flyIn('menuWindow', 0, 1230,menuWindow.width,0, 'elasticOut', 100, '')" elseCmd="menuWindow.visible = 'invisible'" />
 		</FUNCTION>
 		<FUNCTION id="viewSource">
 			<FUNCTIONITEM cmd="webContainer.webView.runJavaScript(file.read('js/viewSource.js'))"/>
