@@ -3,9 +3,6 @@
 	<UI>
 		<UILAYOUT portrait="720,1230" landscape="720,1230">
 		<WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
-			<EDIT id="searchEdit" layout="50,5,530,80" defaultImg="#00000000" text="" placeholder="주소를 입력하세요." placeholderColor="#ffffff" returnKeyType="done" onReturnKey="function.webViewGo(caller.text)" fontSize="30" textColor="#ffffff" />
-			<BUTTON layout="600,20,40,40" defaultImg="/res/daum_btn_search_del.png" onClick="searchEdit.text=''" />
-			<LABEL id="titleLabel" layout="10,0,700,90" defaultImg="#337ab7" text="" textColor="#ffffff" textAlign="center" fontSize="30" fontStyle="bold" onClick="animation.move('titleLabel',0,-90,'easeOut5',400,'')" />
 			<AGATEWEBVIEW id="webView" src="http://sosim13p.cafe24.com/index.jsp" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
 				<LINKMAP>
 					<LINK url="http://*" delay="1"/>	//페이지 이동시 깜빡이는 현상 방지 코드
