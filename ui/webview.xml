@@ -31,7 +31,7 @@
 			</WINDOW>
 		</WINDOW>
 		<!-- 메뉴 -->
-		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" borderStyle="solid:1|#555555" onClick="">
+		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" borderStyle="solid:1|#555555" onClick="function.menuPopup">
 			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false" />
 			<WINDOW layout="362,578,334,550" align="linear:vertical">
 				<LABEL layout="304,88" text="이미지업로드" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp', function.menuPopup" />
