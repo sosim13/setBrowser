@@ -25,8 +25,9 @@ function css(selector, property, value) {
     }
 }
 
-css("body", "font-size", "24px");
-css("tr, td ,th", "font-size", "24px");
-css("a:link", "font-size", "18pt");
-css("a:visited", "font-size", "18pt");
-css("a:hover", "font-size", "18pt");
+
+hideElementByClass("column_right");
+hideElementByClass("section_shoppingcast");
+hideElementByClass("section_rbn");
+css("div.container","width","900px");
+css("div.section_navbar","width","900px");
