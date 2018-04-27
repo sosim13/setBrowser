@@ -25,6 +25,12 @@ function css(selector, property, value) {
     }
 }
 
-css("con_head1","font-size","24px");
-css("pmemo_cont","font-size","24px");
-css("con_text","font-size","24px");
+css("div#con_head1", "font-size", "24px");
+css("div#pmemo_cont", "font-size", "24px");
+css("div#con_text", "font-size", "24px");
+css("div#login_head", "font-size", "24px");
+css("font#rep", "font-size", "24px");
+css("table.reply_box td#rp_right", "font-size", "24px");
+css("div#con_says", "font-size", "24px");
+css("font.reply_id", "font-size", "24px");
+css("a:link", "font-size", "18pt");
