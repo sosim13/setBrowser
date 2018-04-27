@@ -28,3 +28,4 @@ function css(selector, property, value) {
 css("div#con_head1", "font-size", "30px");
 css("div#pmemo_cont", "font-size", "30px");
 css("div#con_text", "font-size", "30px");
+css("div#con_text", "padding-top", "30px");
