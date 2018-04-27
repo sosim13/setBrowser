@@ -30,7 +30,6 @@
 		<!-- 메뉴 -->
 		<WINDOW id="menuWindow" layout="0,0,720,1230" align="relative" visible="invisible" borderStyle="solid:1|#555555" onClick="">
 			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" enabled="false">
-				<WINDOW align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4">
 				<LABEL layout="304,88" text="쇼핑몰소식" fontSize="25" textAlign="vCenter" textColor="#000000" padding="0,0,0,0" onClick="webView.src='http://mulawear.com/m/board.html?code=jo112_board1'" />
 				<LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="0,0,0,0" onClick="appLauncher.openUri('tel:+1-650-253-0000','')" />
 				<LABEL layout="304,88" text="SMS 공유" fontSize="25" textAlign="vCenter" textColor="#000000" padding="0,0,0,0" onClick="appLauncher.openUri('sms:?body=뮬라웨어', '')" />
