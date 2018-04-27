@@ -12,7 +12,7 @@
 					<LINK url="http://*" jsPlugin="js/common.js" delay="500"/>
 
 					<!-- 사이트 -->
-					<LINK url="http://http://nikemania.com/*" jsPlugin="js/nikemania.js" delay="500"/>
+					<LINK url="http://http://nikemania.com/*" jsPlugin="site/nikemania.js" delay="500"/>
 				</LINKMAP>
 			</AGATEWEBVIEW>
 		</WINDOW>
@@ -27,7 +27,7 @@
 				<BUTTON layout="70,70" defaultImg="res/tab_reload.png" onClick="device.toastPopup('새로고침'), webView.refresh()" />				
 				<BUTTON layout="70,70" defaultImg="res/tab_settings.png" onClick="device.toastPopup('팝업메뉴 활성화'), function.menuPopup" margin="0,0,30,0" />
 				<LABEL layout="1,70" defaultImg="#d3d4d5"/>
-				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기3'), function.webBottomVisible"/>
+				<BUTTON layout="70,70" defaultImg="res/browser_bottom_ico_full.png" margin="0,0,15,0" onClick="device.toastPopup('메뉴 숨기기4'), function.webBottomVisible"/>
 			</WINDOW>
 		</WINDOW>
 		<!-- 메뉴 -->
