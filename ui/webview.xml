@@ -3,7 +3,7 @@
 	<UI>
 		<UILAYOUT portrait="720,1230" landscape="720,1230">
 		<WINDOW id="mainWindow" layout="0,0,720,1150" align="relative">
-			<AGATEWEBVIEW id="webView" src="http://sosim13p.cafe24.com/index.jsp" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
+			<AGATEWEBVIEW id="webView" layout="0,0,720,1150" supportZoom="true" controls="none" defaultImg="#ffffff">
 				<LINKMAP>
 					<LINK url="http://*" delay="1"/>	//페이지 이동시 깜빡이는 현상 방지 코드
 					<LINK url="http://*" onFinish=""/>	//페이지 로딩이 완료될 시 호출 되는 코드
