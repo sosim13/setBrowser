@@ -35,7 +35,7 @@
 			<STYLEBUTTON layout="362,578,334,550" align="linear:vertical" shape="roundRect(10)" borderStyle="solid:1|#555555" defaultImg="#f4f4f4" enabled="false" />
 			<WINDOW layout="362,578,334,550" align="linear:vertical">
 				<LABEL layout="304,88" text="이미지업로드" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp', function.menuPopup" />
-				<LABEL layout="304,88" text="줌인3" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="function.scaleIn, function.menuPopup" />
+				<LABEL layout="304,88" text="줌인5" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="function.scaleIn, function.menuPopup" />
 				<LABEL layout="304,88" text="줌아웃" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="webView.src='http://sosim13p.cafe24.com/cloudinary/index.jsp', function.menuPopup" />
 				<!-- <LABEL layout="304,88" text="고객센터" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="device.toastPopup('준비중입니다.'), function.menuPopup" />
 				<LABEL layout="304,88" text="SMS 공유" fontSize="25" textAlign="vCenter" textColor="#000000" padding="20,0,0,0" onClick="appLauncher.openUri('sms:?body=SetBrowser', ''), function.menuPopup" /> -->
@@ -58,9 +58,12 @@
 		<FUNCTION id="goForward">
 			<CMD condition="webView.canForward() == 'true'" cmd="webView.forward()" elseCmd="device.toastPopup('다음화면이 없습니다.')" />
 		</FUNCTION>
+
 		<FUNCTION id="scaleIn">
-			<CMD cmd="scaleIn()" />
+			<CMD cmd="AGATEWEBVIEW.postJavaScript.scaleIn()" />
+			<CMD cmd="function.zoom(scale)" />
 		</FUNCTION>
+
 		<FUNCTION id="webBottomVisible">
 			<CMD condition="webBottomWindow.visible == 'visible'" cmd="webBottomWindow.visible='invisible', bottomBtn.visible='visible', mainWindow.height=mainWindow.height+80, webView.height=webView.height+80" elseCmd="webBottomWindow.visible='visible', bottomBtn.visible='invisible', mainWindow.height=mainWindow.height-80, webView.height=webView.height-80" />
 		</FUNCTION>
