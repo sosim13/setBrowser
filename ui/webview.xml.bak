@@ -59,8 +59,7 @@
 			<CMD condition="webView.canForward() == 'true'" cmd="webView.forward()" elseCmd="device.toastPopup('다음화면이 없습니다.')" />
 		</FUNCTION>
 		<FUNCTION id="scaleIn">
-			<CMD cmd="scale *= 1.25" />
-			<CMD cmd="zoom(scale)" />
+			<CMD cmd="scaleIn()" />
 		</FUNCTION>
 		<FUNCTION id="webBottomVisible">
 			<CMD condition="webBottomWindow.visible == 'visible'" cmd="webBottomWindow.visible='invisible', bottomBtn.visible='visible', mainWindow.height=mainWindow.height+80, webView.height=webView.height+80" elseCmd="webBottomWindow.visible='visible', bottomBtn.visible='invisible', mainWindow.height=mainWindow.height-80, webView.height=webView.height-80" />
