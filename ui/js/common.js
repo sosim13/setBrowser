@@ -29,6 +29,7 @@ function css(selector, property, value) {
 var scale = 1;
  
 function scaleIn() {
+	alert("줌인");
 	scale *= 1.25;
 	zoom(scale);
 }
